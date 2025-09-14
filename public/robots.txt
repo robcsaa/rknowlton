@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Host
+Host: https://robknowlton.com
+
+# Sitemaps
+Sitemap: https://robknowlton.com/sitemap.xml
