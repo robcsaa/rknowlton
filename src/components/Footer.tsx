@@ -4,7 +4,6 @@ import { brandConfig } from '@/lib/config';
 interface FooterProps {
   brandName?: string;
   email?: string;
-  phone?: string;
 }
 
 const navigation = {
@@ -20,10 +19,9 @@ const navigation = {
   ],
 };
 
-export default function Footer({ 
+export default function Footer({
   brandName = brandConfig.name,
-  email = brandConfig.email,
-  phone = brandConfig.phone 
+  email = brandConfig.email
 }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
@@ -61,16 +59,6 @@ export default function Footer({
                   {email}
                 </a>
               </div>
-              {phone && (
-                <div>
-                  <a
-                    href={`tel:${phone}`}
-                    className="text-sm text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-white rounded-md px-1 py-0.5"
-                  >
-                    {phone}
-                  </a>
-                </div>
-              )}
             </div>
           </div>
           

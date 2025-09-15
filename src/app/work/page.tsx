@@ -97,6 +97,90 @@ export default function WorkPage() {
         </div>
       </Section>
 
+      {/* Portfolio Section */}
+      <Section className="py-20" background="white">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            Portfolio
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Featured projects that showcase my work in web development and design.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          {/* Donveil.com */}
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+            <div className="relative">
+              <div className="aspect-video bg-gradient-to-br from-slate-900 to-slate-700 flex items-center justify-center">
+                <div className="text-center text-white">
+                  <div className="text-3xl font-bold mb-2">Don Veil</div>
+                  <div className="text-sm opacity-80">Premium Fashion & Lifestyle</div>
+                </div>
+              </div>
+              <div className="absolute top-4 right-4">
+                <a
+                  href="https://donveil.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Donveil.com</h3>
+              <p className="text-gray-600 mb-4">
+                A premium fashion and lifestyle brand focusing on elegant veiling and luxury fashion products with a sophisticated e-commerce platform.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">E-commerce</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Fashion</span>
+                <span className="px-3 py-1 bg-pink-100 text-pink-800 text-sm rounded-full">Lifestyle</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Henryaz.com */}
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+            <div className="relative">
+              <div className="aspect-video bg-gradient-to-br from-indigo-900 to-purple-800 flex items-center justify-center">
+                <div className="text-center text-white">
+                  <div className="text-3xl font-bold mb-2">Henry AZ</div>
+                  <div className="text-sm opacity-80">Musician & Artist</div>
+                </div>
+              </div>
+              <div className="absolute top-4 right-4">
+                <a
+                  href="https://henryaz.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Henryaz.com</h3>
+              <p className="text-gray-600 mb-4">
+                Official website for musician Henry AZ featuring pulsing beats and moody dreamscapes. Includes music promotion, show listings, and fan engagement with booking and management contact systems.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-emerald-100 text-emerald-800 text-sm rounded-full">Music</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Artist Portfolio</span>
+                <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Entertainment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* Results Summary */}
       <Section className="py-20" background="white">
         <div className="text-center max-w-4xl mx-auto">

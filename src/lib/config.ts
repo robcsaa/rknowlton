@@ -7,7 +7,6 @@ export const brandConfig: BrandConfig = {
   accentColor: process.env.NEXT_PUBLIC_ACCENT_COLOR || '#00ff88',
   calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com/your-calendly-link',
   email: process.env.NEXT_PUBLIC_EMAIL || 'rob@rknowlton.com',
-  phone: process.env.NEXT_PUBLIC_PHONE,
   logoPath: process.env.NEXT_PUBLIC_LOGO_PATH,
 };
 

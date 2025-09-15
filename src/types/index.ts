@@ -62,7 +62,6 @@ export interface BrandConfig {
   accentColor: string;
   calendlyUrl: string;
   email: string;
-  phone?: string;
   logoPath?: string;
 }
 

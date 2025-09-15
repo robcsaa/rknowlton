@@ -70,7 +70,6 @@ export function generateJsonLd(type: 'organization' | 'person' | 'localBusiness'
     url: siteConfig.url,
     description: siteConfig.description,
     email: brandConfig.email,
-    telephone: brandConfig.phone,
   };
 
   switch (type) {
