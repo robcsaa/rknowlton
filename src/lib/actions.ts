@@ -1,7 +1,7 @@
 'use server';
 
 import { z } from 'zod';
-import { Resend } from 'resend';
+import nodemailer from 'nodemailer';
 import { ContactFormData } from '@/types';
 import { headers } from 'next/headers';
 
@@ -115,29 +115,39 @@ export async function submitContactForm(formData: ContactFormData): Promise<{ su
       consent: validatedData.consent,
     };
 
-    // Check if Resend is configured
-    if (!process.env.RESEND_API_KEY) {
-      console.error('RESEND_API_KEY not configured');
+    // Check if SMTP is configured
+    if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
+      console.error('SMTP not configured');
       return {
         success: false,
         error: 'Email service not configured. Please try again later.'
       };
     }
 
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    // Create transporter
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: parseInt(process.env.SMTP_PORT || '587'),
+      secure: process.env.SMTP_PORT === '465',
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+    });
+
     const contactEmail = process.env.CONTACT_EMAIL || process.env.NEXT_PUBLIC_EMAIL || 'rob@rknowlton.com';
 
     // Send email notification
-    const emailResult = await resend.emails.send({
-      from: 'Contact Form <noreply@robknowlton.com>', // Use your verified domain
-      to: [contactEmail],
+    const emailResult = await transporter.sendMail({
+      from: process.env.SMTP_USER,
+      to: contactEmail,
       subject: `New Contact Form Submission from ${sanitizedData.name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #333; border-bottom: 2px solid #00ff88; padding-bottom: 10px;">
             New Contact Form Submission
           </h2>
-          
+
           <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3 style="color: #333; margin-top: 0;">Contact Information</h3>
             <p><strong>Name:</strong> ${sanitizedData.name}</p>
@@ -178,19 +188,13 @@ Timestamp: ${new Date().toISOString()}
       `,
     });
 
-    if (emailResult.error) {
-      console.error('Failed to send email:', emailResult.error);
-      return {
-        success: false,
-        error: 'Failed to send message. Please try again later.'
-      };
-    }
+    console.log('Email sent successfully:', emailResult.messageId);
 
     // Send auto-reply to the user
     try {
-      await resend.emails.send({
-        from: 'Rob Knowlton <noreply@robknowlton.com>', // Use your verified domain
-        to: [sanitizedData.email],
+      await transporter.sendMail({
+        from: process.env.SMTP_USER,
+        to: sanitizedData.email,
         subject: 'Thanks for reaching out!',
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

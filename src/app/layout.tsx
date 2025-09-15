@@ -10,10 +10,13 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-export const metadata: Metadata = generateMetadata({
-  title: "Rob Knowlton — AI & Systems Solutions Architect (Los Angeles)",
-  description: "AI, automation, cloud/on-prem, and integrations that reduce chaos and increase throughput. Book a free consult.",
-});
+export const metadata: Metadata = {
+  ...generateMetadata({
+    title: "Rob Knowlton — AI & Systems Solutions Architect (Los Angeles)",
+    description: "AI, automation, cloud/on-prem, and integrations that reduce chaos and increase throughput. Book a free consult.",
+  }),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://robknowlton.com'),
+};
 
 export default function RootLayout({
   children,

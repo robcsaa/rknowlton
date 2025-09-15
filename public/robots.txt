@@ -5,7 +5,7 @@ Disallow: /api/
 Disallow: /_next/
 
 # Host
-Host: https://robknowlton.com
+Host: https://rknowlton.com
 
 # Sitemaps
-Sitemap: https://robknowlton.com/sitemap.xml
+Sitemap: https://rknowlton.com/sitemap.xml
