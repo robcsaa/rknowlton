@@ -126,13 +126,15 @@ const detailedServices = [
     icon: <Lightbulb className="w-6 h-6" />,
     title: 'Creative Tech Solutions',
     subtitle: 'When you need something that doesn\'t exist yet',
-    description: 'I build custom solutions for unique business challenges. Rapid prototyping, proof-of-concepts, and innovative tech that drives real business outcomes.',
+    description: 'I build custom solutions for unique business challenges. Mobile apps, rapid prototyping, proof-of-concepts, and innovative tech that drives real business outcomes.',
     features: [
       'Rapid prototyping and MVP development',
       'Custom software development',
       'IoT and hardware integration',
       'Data visualization and dashboards',
-      'Mobile and web application development',
+      'Native iOS and Android mobile applications',
+      'Cross-platform mobile development (React Native)',
+      'Web application development',
       'Innovation consulting and strategy'
     ],
     outcomes: [
@@ -141,7 +143,7 @@ const detailedServices = [
       'Validated business concepts and prototypes',
       'Custom solutions that fit your exact needs'
     ],
-    technologies: ['React', 'Next.js', 'Python', 'IoT Platforms', 'D3.js', 'WebGL'],
+    technologies: ['React Native', 'Swift', 'Kotlin', 'React', 'Next.js', 'Python', 'IoT Platforms', 'D3.js', 'WebGL'],
     ctaText: 'Build something new',
     ctaUrl: '/contact'
   }

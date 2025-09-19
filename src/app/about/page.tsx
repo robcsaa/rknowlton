@@ -49,6 +49,8 @@ const expertise = [
   "Business Process Automation",
   "Security & Monitoring Systems",
   "Data Pipeline Architecture",
+  "Mobile App Development (iOS & Android)",
+  "Cross-Platform Development (React Native)",
   "Rapid Prototyping & MVP Development"
 ];
 
