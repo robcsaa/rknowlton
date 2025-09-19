@@ -86,7 +86,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
-              I'm {brandConfig.name.split(' ')[0]}.
+              I&apos;m {brandConfig.name.split(' ')[0]}.
               <span 
                 className="block"
                 style={{ color: brandConfig.accentColor }}
@@ -95,8 +95,8 @@ export default function AboutPage() {
               </span>
             </h1>
             <p className="mt-6 text-xl text-gray-600 leading-relaxed">
-              For the past 15+ years, I've been the guy startups and SMBs call when their tech 
-              is holding them back instead of moving them forward. I don't do consulting theater—I 
+              For the past 15+ years, I&apos;ve been the guy startups and SMBs call when their tech 
+              is holding them back instead of moving them forward. I don&apos;t do consulting theater—I 
               build systems that actually work.
             </p>
             <div className="mt-8 flex items-center space-x-6 text-gray-600">
@@ -122,7 +122,7 @@ export default function AboutPage() {
                   backgroundColor: brandConfig.accentColor
                 }}
               >
-                Let's talk about your tech
+                Let&apos;s talk about your tech
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link
@@ -168,22 +168,22 @@ export default function AboutPage() {
               <p>
                 I started building systems when &ldquo;the cloud&rdquo; was just a weather phenomenon 
                 and AI was science fiction. Back then, if you wanted something automated, 
-                you built it yourself or hired a team of consultants who'd spend six months 
-                telling you why it couldn't be done.
+                you built it yourself or hired a team of consultants who&apos;d spend six months 
+                telling you why it couldn&apos;t be done.
               </p>
               <p>
-                Fast forward to today: I've helped over 50 companies—from scrappy startups 
-                to Fortune 500s—turn their tech from a liability into an asset. I've seen 
+                Fast forward to today: I&apos;ve helped over 50 companies—from scrappy startups 
+                to Fortune 500s—turn their tech from a liability into an asset. I&apos;ve seen 
                 every flavor of broken system, over-engineered solution, and vendor lock-in 
                 nightmare you can imagine.
               </p>
               <p>
-                Here's what I learned: most tech problems aren't actually tech problems. 
-                They're business problems disguised as tech problems. My job is to cut through 
+                Here&apos;s what I learned: most tech problems aren&apos;t actually tech problems. 
+                They&apos;re business problems disguised as tech problems. My job is to cut through 
                 the noise, identify what actually matters, and build solutions that work.
               </p>
               <p>
-                I'm based in Los Angeles, but I work with clients everywhere. I believe in 
+                I&apos;m based in Los Angeles, but I work with clients everywhere. I believe in 
                 building things that scale, shipping fast, and measuring what matters. 
                 Everything else is just noise.
               </p>
@@ -211,7 +211,7 @@ export default function AboutPage() {
                 Current Focus
               </h3>
               <p className="text-gray-700">
-                Right now, I'm helping startups and SMBs leverage AI and automation to 
+                Right now, I&apos;m helping startups and SMBs leverage AI and automation to 
                 eliminate bottlenecks and scale their operations. The technology is finally 
                 mature enough to deliver real ROI, and the companies that move fast will 
                 have a significant advantage.
@@ -229,7 +229,7 @@ export default function AboutPage() {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             No lengthy discovery phases, no death-by-PowerPoint, no consulting theater. 
-            Here's my actual approach to getting your tech working.
+            Here&apos;s my actual approach to getting your tech working.
           </p>
         </div>
         
@@ -251,11 +251,11 @@ export default function AboutPage() {
       <Section background="gray" className="py-20">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-6">
-            Let's Fix Your Tech
+            Let&apos;s Fix Your Tech
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            If your tech is holding you back instead of moving you forward, let's talk. 
-            I'll give you a straight assessment of what you need and how to get there.
+            If your tech is holding you back instead of moving you forward, let&apos;s talk. 
+            I&apos;ll give you a straight assessment of what you need and how to get there.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -272,7 +272,7 @@ export default function AboutPage() {
               href="/work"
               className="inline-flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
             >
-              See what I've built
+              See what I&apos;ve built
             </Link>
           </div>
         </div>
