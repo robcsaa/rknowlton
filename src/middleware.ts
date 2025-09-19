@@ -8,7 +8,7 @@ export function middleware(request: NextRequest) {
   // Content Security Policy
   response.headers.set(
     'Content-Security-Policy',
-    "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://assets.calendly.com https://plausible.io https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://assets.calendly.com; img-src 'self' data: https:; font-src 'self' https:; connect-src 'self' https://assets.calendly.com https://plausible.io https://www.google-analytics.com; frame-src https://calendly.com;"
+    "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://assets.calendly.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline' https://assets.calendly.com; img-src 'self' data: https:; font-src 'self' https:; connect-src 'self' https://assets.calendly.com https://vitals.vercel-insights.com; frame-src https://calendly.com;"
   );
 
   // Other security headers
