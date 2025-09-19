@@ -9,7 +9,7 @@ import { brandConfig } from '@/lib/config';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Work & Case Studies',
-  description: 'See how I&apos;ve helped startups and SMBs achieve 40-70% faster cycle times, reduce costs, and scale their operations through AI, automation, and smart infrastructure.',
+  description: 'See how I\'ve helped startups and SMBs achieve 40-70% faster cycle times, reduce costs, and scale their operations through AI, automation, and smart infrastructure.',
 });
 
 export default function WorkPage() {

@@ -29,10 +29,10 @@ export default function ContactPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              Let&apos;s Talk Tech
+              Let's Talk Tech
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ready to make your tech actually work? Choose your preferred way to get in touch and let&apos;s build something that delivers results.
+              Ready to make your tech actually work? Choose your preferred way to get in touch and let's build something that delivers results.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ export default function ContactPage() {
                   Send a Message
                 </h2>
                 <p className="text-gray-600">
-                  Tell me about your project and I&apos;ll get back to you within 24 hours.
+                  Tell me about your project and I'll get back to you within 24 hours.
                 </p>
               </div>
               

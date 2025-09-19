@@ -170,8 +170,8 @@ export default function ServicesPage() {
             </span>
           </h1>
           <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
-            I don&apos;t do consulting theater. I build systems that eliminate bottlenecks, 
-            reduce costs, and scale with your business. Here&apos;s exactly how I help startups 
+            I don't do consulting theater. I build systems that eliminate bottlenecks,
+            reduce costs, and scale with your business. Here's exactly how I help startups 
             and SMBs get their tech working for them.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
@@ -293,7 +293,7 @@ export default function ServicesPage() {
             Ready to Get Your Tech Working?
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            Let&apos;s talk about your specific challenges and how I can help solve them. 
+            Let's talk about your specific challenges and how I can help solve them. 
             No sales pitch, just a straight conversation about what you need.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
